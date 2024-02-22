@@ -1,0 +1,57 @@
+/* Basic resets */
+:root{
+    margin: 0;
+    padding: 0;
+}
+ul > li {
+    list-style-type: none;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+}
+header{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sidebar {
+    grid-row: 1 / 3;
+    display: grid;
+    gap: 1em;
+}
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+h1, h2, h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.projects{
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.branding{
+    display: flex;
+}
+.announcements, .trending{
+    display: grid;
+}
+header > div {
+    display: flex;
+    align-items: start;
+}
