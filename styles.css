@@ -35,6 +35,19 @@ header{
     grid-row: 1 / 3;
     display: grid;
     gap: 1em;
+    align-content: start;
+    margin-left: 1rem;
+}
+.sidebar img{
+    width: 30px;
+    height: auto;
+}
+.sidebar > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    margin-top: 15px;
 }
 .content {
     display: grid;
