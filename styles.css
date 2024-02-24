@@ -75,5 +75,9 @@ h1, h2, h3{
 }
 header > div {
     display: flex;
-    align-items: start;
+#dash-logo{
+    letter-spacing: 0.25rem;
+    background: linear-gradient(to left, blue, pink);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
