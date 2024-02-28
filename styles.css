@@ -89,9 +89,9 @@ header > div {
     display: flex;
 #dash-logo{
     letter-spacing: 0.25rem;
-    background: linear-gradient(to left, blue, pink);
-    background-clip: text;
+    font: 800 40px Arial;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
 }
 button {
     appearance: none;
