@@ -2,6 +2,10 @@
 :root{
     margin: 0;
     padding: 0;
+    background-color: white;
+    color: black;
+    font-family: monospace;
+}
 @font-face {
     font-family: monospace;
     src: url(fonts/Space_Mono/SpaceMono-Regular.ttf);
