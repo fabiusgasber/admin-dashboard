@@ -2,15 +2,15 @@
 :root{
     margin: 0;
     padding: 0;
-    --main-bg-color: #d1d5db;
-    --main-color: #1f2937;
-    background-color: var(--main-bg-color);
-    color: var(--main-color);
-    font-family: montserrat;
+@font-face {
+    font-family: monospace;
+    src: url(fonts/Space_Mono/SpaceMono-Regular.ttf);
 }
 @font-face {
-    font-family: montserrat;
-    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: montserrat;    
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+h1{
 }
 ul > li {
     list-style-type: none;
