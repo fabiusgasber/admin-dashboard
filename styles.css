@@ -93,3 +93,17 @@ header > div {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+button {
+    appearance: none;
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px 30px;
+    margin-right: 10px;
+    font-family: montserrat;
+    font-weight: 600;
+    background-color: white;
+}
+button:active{
+    transform: translateY(2px);
+    color: yellow;
+}
