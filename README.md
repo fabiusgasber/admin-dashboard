@@ -1,2 +1,4 @@
 # admin-dashboard
-An admin dashboard project from The Odin Project's intermediate CSS and HTML course.
+This project exercise, created as part of The Odin Project curriculum, is a full dashboard design mainly intended to demonstrate the use of CSS Grid and its capabilities.
+
+<a href="https://fabiusgasber.github.io/admin-dashboard/">LIVE DEMO</a>
