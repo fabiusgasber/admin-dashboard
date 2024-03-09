@@ -193,7 +193,7 @@ h1{
 
 header {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     align-items: center;
     padding: 3em;
@@ -203,8 +203,8 @@ header {
 
 .user-info {
     display: flex;
-    justify-content: end;
     align-items: center;
+    justify-self: end;
     gap: 1em;
 }
 
@@ -225,7 +225,7 @@ header {
 
 .user-btn {
     display: flex;
-    justify-content: end;
+    justify-self: end;
 }
 
 .search {
