@@ -245,11 +245,36 @@ header {
 }
 
 /* Announcements */ 
-    font-family: montserrat;
-    font-weight: 600;
-    background-color: white;
+
+.announcements{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 1em 2em;
+    gap: 1em;
 }
-button:active{
-    transform: translateY(2px);
+
+.announcements h1{
+    font-size: 15px;
+    margin-bottom: 0.5em;
     color: yellow;
+}
+
+.announcements::before, .projects::before{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: -30px;
+    font-family: montserrat;
+    color: black;
+}
+
+.announcements::before {
+    content: "Announcements";
+}
+
+.announcements > div:not(:last-child) {
+    border-bottom: 1px solid white;
 }
