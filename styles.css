@@ -125,25 +125,71 @@ h1{
 
 
 /* Content area */ 
+
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 20px;
+    padding: 3em;
 }
-h1, h2, h3{
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-.content-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 .projects{
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    position: relative;
 }
-.branding{
+
+.projects::before{
+    content: "Your Projects";
+}
+
+.projects > div {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.project {
+    position: relative;
+    padding: 3em;
+}
+.project > p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.project img {
+    width: 300px;
+    height: 200px;
+}
+.fav, .share, .save {
+    position: absolute;
+    width: 20px;
+    height: auto;
+    bottom: 5px;
+    right: 10px;
+}
+
+.share{
+    content: url(icons/share-variant-outline.svg);
+}
+
+.save{
+    content: url(icons/star-plus-outline.svg);
+    right: 40px;
+}
+
+.fav{
+    content: url(icons/eye-plus-outline.svg);
+    right: 70px;
+}
+
+/* Header */ 
     display: flex;
 }
 .announcements, .trending{
